@@ -46,4 +46,6 @@
 
 > Septième étape : Création de la BDD
 
-> Huitième étape : Appel A.J.A.X et récupération jSON des données pour les sauvegarder dans la BDD
+> Huitième étape : Création des requêtes SQL 
+
+> Neuvième étape : Appel A.J.A.X et récupération jSON des données pour les sauvegarder dans la BDD
