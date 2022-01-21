@@ -1,0 +1,137 @@
+.tab{
+    border-spacing: revert;
+    border: 1px solid black;
+}
+
+h1{
+    color: tomato;
+    text-align: center;
+}
+thead{
+    background-color: black;
+    color: red;
+}
+
+tbody{
+    color: red;
+}
+
+.btn_action {
+    border-radius: 10px;
+    background-color: green;
+    color: whitesmoke;
+    border: 2px solid royalblue;
+}
+
+.btn_action:hover {
+    background-color: White;
+    color: royalblue;
+    border: 2px solid royalblue;
+    transition-duration: 2s;
+}
+
+.btn_modifier {
+    border-radius: 10px;
+    background-color: goldenrod;
+    color: whitesmoke;
+    border: 2px solid rgba(11, 148, 118, 0.767);
+}
+
+.btn_modifier:hover {
+    background-color: rgba(79, 13, 92, 0.767);
+    color: white;
+    border: 2px solid crimson;
+    transition-duration: 2s;
+}
+
+.btn_annuler {
+    border-radius: 10px;
+    background-color: orangered;
+    color: whitesmoke;
+    border: 2px solid rgba(64, 219, 219, 0.767);
+}
+
+.btn_annuler:hover {
+    background-color: yellowgreen;
+    color: crimson;
+    border: 2px solid rgba(70, 10, 233, 0.767);
+    transition-duration: 2s;
+}
+.btn_delete {
+    border-radius: 10px;
+    background-color: red;
+    color: whitesmoke;
+    border: 2px solid rgba(21, 30, 146, 0.767);
+}
+
+.btn_delete:hover {
+    background-color: rgba(31, 8, 240, 0.767);
+    color: white;
+    border: 2px solid crimson;
+    transition-duration: 2s;
+}
+
+.resetStart{
+    text-align: center;
+}
+
+.btn_reset {
+    border-radius: 10px;
+    background-color: royalblue;
+    color: whitesmoke;
+    border: 2px solid rgba(79, 13, 92, 0.767);
+}
+
+.btn_reset:hover {
+    background-color: tomato;
+    color: black;
+    border: 2px solid yellow;
+    transition-duration: 2s;
+}
+.inputs{
+    text-align: center;
+    color: darkblue;
+    font-style: oblique;
+}
+
+html{
+    background-image: linear-gradient(273deg, #DB3D68, transparent);
+}
+
+.page{
+    background-image: linear-gradient(271deg, #79ace9, transparent);
+}
+
+.cases_a_cocher{
+    display: inline-flex;
+}
+
+header{
+    height: 200px;
+    background-size: cover;
+    background-image:url(img/62Z_2107.w026.n002.674B.p1.674.jpg);
+}
+
+footer{
+    height: 200px;
+    background-size: cover;
+    background-image:url(img/789452.jpg);
+}
+
+input.control {
+    outline:0;
+    font-size:14px;
+    /* width:250px; */
+}
+
+.control:valid {
+    /* border:3px solid #0a0; */
+    background-color: #0a0;
+    color: #fff;
+}
+
+.control:invalid {
+    /* border:3px solid #a00; */
+    background-color: #a00;
+    color: #fff;
+}

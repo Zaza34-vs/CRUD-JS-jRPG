@@ -1,0 +1,114 @@
+    <script type="text/javascript" src="js/jquery_3_3_1.js?1_1"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+    <!-- include libraries BS3 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="js/popper_1-14-5.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- include summernote -->
+    <link rel="stylesheet" href="summernote/summernote.css">
+
+    <script type="text/javascript" src="summernote/summernote.js"></script>
+    <script type="text/javascript" src="summernote/lang/summernote-fr-FR.js"></script>
+
+
+	<script>
+	
+		var aOfPages= [];
+		aOfPages["id_page"]= 2;
+		aOfPages["nom_page"]= "Mentions légales";
+		aOfPages["contenu_page"]= "Coucou<br>Ceci est un test pour Virginie";
+		
+		function inf_sauvegarder()	{
+			// aller poster en ajax
+			var datas = {
+				page : "page_save",
+				bJSON : 1, 
+				id_page: 2,
+				contenu_page: $('#summernote').val()
+			}
+			$.ajax({
+				type: "POST",
+				url: "route.php",
+				async: true,
+				data: datas,
+				dataType: "json",
+				cache: false,
+			})
+			.done(function(result) {
+				alert("Enregistrement effectué !");
+			})
+			.fail(function(err) {
+				console.log('error : ' + err.status);
+				alert("Erreur lors de l'ajout de votre film. Vous allez être déconnecté.");
+				self.location.href= "route.php?page=logout"
+			});
+		}
+		
+		function inf_constructHTML()	{
+			// aller chercher en ajax le contenu de la page id_page=2
+			/*
+			dans le .done du retour des données
+			*/
+			// var inf_contenu_page= result[0]["contenu_page"];
+			var inf_contenu_page= aOfPages["contenu_page"];
+			// exemple pour remplir le summernote en édition :
+			$('#summernote').summernote("code", inf_contenu_page);
+			
+			// OU
+			
+			// exemple si c'est pour l'utilisateur à afficher dans une div nommée div_contenu_page
+			// $('#div_contenu_page').html(inf_contenu_page);
+			
+			
+			// Pour infos si besoin, comment vider le summernote
+			// $('#summernote').summernote("code", "");
+		}
+	
+
+        $(document).ready(function(){
+			var myMainHeight= 500;
+			var myMainWidth= 1100;
+			// pour les param?res, voir summernote.js ?partir de la ligne 7320.
+            $('.summernote').summernote({
+                maxWidth: myMainWidth,
+                maxHeight: myMainHeight,
+                lang: "fr-FR",
+                width: myMainWidth, 
+                height: myMainHeight,
+				toolbar: [
+					['style', ['style', 'bold', 'italic', 'underline']],
+					['font', ['strikethrough']],
+					['style', ['clear']],
+					['fontname', ['fontname']],
+					['fontsize', ['fontsize']],
+					['color', ['color']],
+					['para', ['ul', 'ol', 'paragraph']],
+					['height', ['height']], 
+					['table', ['table']], 
+					['link', ['link']], 
+					['picture', ['picture']], 
+					['video', ['video']], 
+					['hr', ['hr']], 
+					['codeview', ['codeview']], 
+					['undo', ['undo']], 
+					['redo', ['redo']]
+				], 
+				fontNames: [
+					'Arial', 'Arial Black', 'Verdana'
+				]
+			});
+			
+			// fonction qui remplit le summernote
+			inf_constructHTML();
+
+    });
+
+
+	</script>
+
+
+<body>
+<textarea id="summernote" name="summernote" class="summernote"></textarea>
+</body>
