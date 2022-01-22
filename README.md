@@ -18,10 +18,10 @@
   * Android and/or iOS
   * NAVWEB
  * Input de type **_radio_** pour le type d'adaptation pour le jeu :
-  * Animé
-  * Mangas
-  * Film d'animation
-  * Aucun -> si jamais il n'y en aurais pas
+    * Animé
+    * Mangas
+    * Film d'animation
+    * Aucun -> si jamais il n'y en aurais pas
  * Dernier input de type **_text_** pour le nom de la série du jeu
 
 #### Structure de mon CRUD: 
