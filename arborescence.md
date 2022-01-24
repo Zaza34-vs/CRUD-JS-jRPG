@@ -20,8 +20,7 @@ L'arborescence du CRUD avec AJAX :
     >> style.css.map
     >
     >>style.scss
-
->wamp64/files ->
+    >
     >> crud-files ->
     >>> config-crud.ini
 
