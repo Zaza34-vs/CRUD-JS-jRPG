@@ -48,6 +48,6 @@
 
 > Huitième étape : Création des requêtes SQL 
 
-> *(Neuvième étape : ) Arborescence en PHP comme la v7 du Framework Jijou -> Demande confirmation*
+> Neuvième étape :  Arborescence en PHP comme la v7 du Framework Jijou
 
-> Neuvième ou dixième étape : Appel A.J.A.X et récupération jSON des données pour les sauvegarder dans la BDD
+> Dixième étape : Appel A.J.A.X et récupération jSON des données pour les sauvegarder dans la BDD
