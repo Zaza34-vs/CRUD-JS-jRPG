@@ -35,3 +35,10 @@ L'arborescence du CRUD avec AJAX :
     >> crud-js.mcd
     >
     >>README.md
+
+>wamp64/modules ->
+    >>crud-back ->
+    >
+    >>>add.php
+    >
+    >>>les autres fichiers en php
