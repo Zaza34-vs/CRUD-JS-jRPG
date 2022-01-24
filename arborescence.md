@@ -1,0 +1,43 @@
+L'arborescence du CRUD avec AJAX :
+
+> wamp64/files ->
+    >> CRUD-JS ->
+    >
+    >>> IMG
+    >
+    >>> JS
+    >
+    >>> sass
+    >
+    >>> Datatables
+    >
+    >>> SQL
+    >
+    >>> css
+    >
+    >> style.css
+    >
+    >> style.css.map
+    >
+    >>style.scss
+    >
+    >> crud-files ->
+    >>> config-crud.ini
+
+>wamp64/www ->
+    >> crud-php ->
+    >
+    >>>config.php
+    >
+    >>>route.php
+    >
+    >> crud-js.mcd
+    >
+    >>README.md
+
+>wamp64/modules ->
+    >>crud-back ->
+    >
+    >>>add.php
+    >
+    >>>les autres fichiers en php
