@@ -11,7 +11,9 @@ L'arborescence du CRUD avec AJAX :
     >
     >>> Datatables
     >
-    >>> SQL
+    >>> sql
+    >
+    >>> html
     >
     >>> css
     >
@@ -25,7 +27,7 @@ L'arborescence du CRUD avec AJAX :
     >>> config-crud.ini
 
 >wamp64/www ->
-    >> crud-php ->
+    >> crud ->
     >
     >>>config.php
     >
@@ -36,7 +38,7 @@ L'arborescence du CRUD avec AJAX :
     >>README.md
 
 >wamp64/modules ->
-    >>crud-back ->
+    >>crud ->
     >
     >>>add.php
     >
