@@ -1,18 +1,3 @@
-select nom_jeu
-from nom_jrpg;
-
-select date_sortie
-from date_jrpg;
-
-select console_jeu
-from console_jrpg;
-
-select franchise_jeu
-from serie_jrpg;
-
-select studio_editeur
-from editeur_jrpg;
-
-select adaptation_jeu
-from adaptation_jrpg
+select nom_jeu, date_sortie, editeur_jrpg, console_jrpg, adaptation_jrpg, franchise_jrpg
+from jrpg
 
