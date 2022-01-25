@@ -1,7 +1,7 @@
 L'arborescence du CRUD avec AJAX :
 
 > wamp64/files ->
-    >> CRUD-JS ->
+    >>crud
     >
     >>> IMG
     >
