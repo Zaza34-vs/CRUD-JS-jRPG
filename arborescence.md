@@ -13,10 +13,9 @@ L'arborescence du CRUD avec AJAX :
     >
     >>> sql
     >
-    >>> html
-    >
     >>> css
     >
+    >>> table-perso.html
     >> style.css
     >
     >> style.css.map
