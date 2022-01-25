@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery_3_3_1.js"></script>
+    <link rel="stylesheet" type="text/css" href="datatables.min.css">
+    <script type="text/javascript" charset="utf8" src="datatables.min.js"></script>
+    <script type="text/javascript" src="js/js_perso.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="table-perso.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="img/favicon.ico" />
+    <title>TP formulaire : CRUD</title>
+</head>
+
+<body>
+    <div id="page" class="page">
+        <header>
+            <h1>Les JRPG</h1>
+        </header> <br>
+        <section>
+            <table id="tableau_jeux" class="tab">
+            </table>
+            <form type="submit" class="inputs" name="inputs" required>
+                <p>
+                    Nom : <input type="text" class="control" name="nom" id="nom" required
+                        onkeypress="return /[a-z][ -a-z- ]/i.test(event.key)" placeholder="Nom du jeu à saisir"
+                        onkeyup="saisieControlNom()">
+                </p>
+                <p>Date : <input type="date" class="control" name="date" id="date" required></p>
+                <p>Editeur : <input type="text" class="control" placeholder="Nom de l'éditeur" name="editeur"
+                        id="editeur" required></p>
+                <p>
+                    Console :
+                    <select name="console" id="console" class="control" required>
+                        <option value="PC">PC</option>
+                        <option value="PS3">PS3</option>
+                        <option value="PS4">PS4</option>
+                        <option value="XBOX">XBOX</option>
+                        <option value="SWITCH">SWITCH</option>
+                        <option value="3DS">3DS</option>
+                        <option value="WII">WII</option>
+                        <option value="Android and/or iOS">MOBILE</option>
+                        <option value="NAVWEB">NAVIGATEUR WEB</option>
+                    </select>
+                </p>
+                <p class="cases_a_cocher" id="case_a_cocher">Adaptation :
+                    <br>
+                    <input type="radio" name="adaptation" id="adaptation1" value="anime" required>
+                    <label for="anime">Animes</label>
+                    <input type="radio" name="adaptation" id="adaptation2" value="manga" required>
+                    <label for="manga">Mangas</label>
+                    <input type="radio" name="adaptation" id="adaptation3" value="film d'animation" required>
+                    <label for="film">Film d'animation</label>
+                    <input type="radio" name="adaptation" id="adaptation4" value="aucune" required>
+                    <label for="null">Aucune</label>
+                </p>
+                <p>Série de jeu : <input type="text" name="serie" id="serie" placeholder="La franchise de la série"
+                        class="control" required></p>
+                <p>
+                    <button onClick="ajouterRPG(), boutonAjouterDisabled()" class="btn_action" id="btn_ajouter"
+                        disabled="disabled">AJOUTER un jeu</button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button onClick="majRPG()" class="btn_modifier" id="btn_modifier" hidden>MODIFIER un jeu</button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button onClick="emptyForm()" class="btn_annuler" id="btn_annuler">ANNULER un jeu</button>
+                </p>
+            </form>
+            <p class="resetStart">
+                <button type="reset" onClick="reset()" class="btn_reset" id="btn_reset">REFRESH</button>
+            </p>
+        </section>
+
+        <footer>
+            <!-- Pied-de-page de la page -->
+        </footer>
+    </div>
+</body>
+
+</html>
