@@ -8,7 +8,7 @@
     require $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_CLASS"] .  $version . "/" . "database.php";
     
     require $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_CLASS"] .  $version . "/" . "securite.php";
-    /* $VARS_HTML = getFormsAndSessionsVariables();
+    $VARS_HTML = getFormsAndSessionsVariables();
 
     $numero_connexion = connectBDD($GLOBALS_INI["DB_HOST"], $GLOBALS_INI["DB_NAME"], $GLOBALS_INI["DB_LOGIN"], $GLOBALS_INI["DB_PSW"]);
 
@@ -24,5 +24,4 @@
 		require $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"] . $version . "/route.html";
 	}
 
-    */
 ?>
