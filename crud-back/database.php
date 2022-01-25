@@ -1,6 +1,5 @@
 <?php
     function connectBDD($host, $name, $login, $psw) {
-        $name = 'jrpg';
         $numero_connexion = new PDO ('mysql:host='.$host.';dbname='.$name.';charset=utf8', $login, $psw);
         return $numero_connexion;
     }
