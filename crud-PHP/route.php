@@ -1,7 +1,5 @@
 <?php
 
- 
-
     require "config.php";
     $GLOBALS_INI = getGlobalsINI();
 
