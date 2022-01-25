@@ -1,0 +1,24 @@
+[25-Jan-2022 13:35:30 UTC] PHP Warning:  require(C:/wamp64/modules/crud/crudAJAX/database.php): failed to open stream: No such file or directory in C:\wamp64\www\crud\route.php on line 8
+[25-Jan-2022 13:35:30 UTC] PHP Stack trace:
+[25-Jan-2022 13:35:30 UTC] PHP   1. {main}() C:\wamp64\www\crud\route.php:0
+[25-Jan-2022 13:35:30 UTC] PHP Fatal error:  require(): Failed opening required 'C:/wamp64/modules/crud/crudAJAX/database.php' (include_path='.;C:\php\pear') in C:\wamp64\www\crud\route.php on line 8
+[25-Jan-2022 13:35:30 UTC] PHP Stack trace:
+[25-Jan-2022 13:35:30 UTC] PHP   1. {main}() C:\wamp64\www\crud\route.php:0
+[25-Jan-2022 13:39:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Base 'crud' inconnue in C:\wamp64\modules\crud\database.php:3
+Stack trace:
+#0 C:\wamp64\modules\crud\database.php(3): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\wamp64\www\crud\route.php(13): connectBDD('localhost', 'crud', 'root', '')
+#2 {main}
+  thrown in C:\wamp64\modules\crud\database.php on line 3
+[25-Jan-2022 13:42:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Base 'crud' inconnue in C:\wamp64\modules\crud\database.php:3
+Stack trace:
+#0 C:\wamp64\modules\crud\database.php(3): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\wamp64\www\crud\route.php(13): connectBDD('localhost', 'crud', 'root', '')
+#2 {main}
+  thrown in C:\wamp64\modules\crud\database.php on line 3
+[25-Jan-2022 13:43:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Base 'crud' inconnue in C:\wamp64\modules\crud\database.php:3
+Stack trace:
+#0 C:\wamp64\modules\crud\database.php(3): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\wamp64\www\crud\route.php(13): connectBDD('localhost', 'crud', 'root', '')
+#2 {main}
+  thrown in C:\wamp64\modules\crud\database.php on line 3
