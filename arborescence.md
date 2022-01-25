@@ -41,4 +41,4 @@ L'arborescence du CRUD avec AJAX :
     >
     >>>add.php
     >
-    >>>les autres fichiers en php
+    >>>les autres fichiers en php + table-perso.php
