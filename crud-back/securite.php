@@ -13,7 +13,7 @@ function getFormsAndSessionsVariables()	{
 	}
 
 	if ( (!(isset($VARS_HTML["page"]))) || ($VARS_HTML["page"] == "") )	{
-		$VARS_HTML["page"]= "table-perso";
+		$VARS_HTML["page"]= "gestion";
 	}
 
 	return $VARS_HTML;
