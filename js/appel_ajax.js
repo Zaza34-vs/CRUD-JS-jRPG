@@ -184,7 +184,6 @@ function clearForm() {
     $('#serie').val("");
 }
 
-// il faudra réadapter cette fonction
 function ajouterRPG() {
     var datas = {
         page: "save",
@@ -264,7 +263,7 @@ function majRPG() {
         })
         .fail(function (err) {
             console.log('error : ' + err.status);
-            alert("Erreur lors de la modification de votre film. Vous allez être déconnecté.");
+            alert("Erreur lors de la modification de votre jeu. Vous allez être déconnecté.");
         });
 }
 
