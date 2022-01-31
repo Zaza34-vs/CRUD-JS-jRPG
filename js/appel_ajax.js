@@ -1,71 +1,3 @@
-function loadRPG() {
-    var datas = {
-        page: "liste",
-        bJSON: 1
-    }
-    $.ajax({
-        type: "POST",
-        url: "route.php",
-        async: true,
-        data: datas,
-        dataType: "json",
-        cache: false,
-    })
-        .done(function (result) {
-            console.log(result);
-            var iRPG = 0;
-            for (var ligne in result) {
-                jRPG[iRPG] = [];
-                //jRPG[iRPG]["id_jrpg"] = result[ligne]["id_jrpg"];
-                jRPG[iRPG]["nom"] = htmlspecialchars_decode(result[ligne]["nom"]);
-                jRPG[iRPG]["date"] = result[ligne]["date_film"];
-                jRPG[iRPG]["editeur"] = result[ligne]["editeur"];
-                jRPG[iRPG]["plateforme"] = result[ligne]["plateforme"];
-                jRPG[iRPG]["adaptation"] = result[ligne]["adaptation"];
-                jRPG[iRPG]["serie"] = result[ligne]["serie"];
-                iRPG++;
-            }
-            // INIT DATATABLE
-            // Si je souhaite avoir par défaut autre que les 10 résultats par défaut au chargement
-            // tables.page.len(10).draw();
-            constructTable();
-            tables = $('#tableau_jeux').DataTable(configuration);
-        })
-        .fail(function (err) {
-            alert('error : ' + err.status);
-        });
-}
-
-// récupération du champ radio dans le js
-var radioSelect = "";
-function checkedRadio() {
-    for (let i = 0; i < $("[name=adaptation]").length; i++) {
-        if ($("[name=adaptation]")[i].checked) {
-            radioSelect = $("[name=adaptation]")[i].value;
-        }
-    }
-}
-
-// récupération de la radio dans le champ html
-function recupRadio(adapt) {
-    var iCheckRadio = $("[name=adaptation]");
-
-    for (let i = 0; i < iCheckRadio.length; i++) {
-        if (iCheckRadio[i].value == adapt) {
-            iCheckRadio[i].checked = true;
-        }
-    }
-}
-
-// fonction pour reset le champ radio
-function unchecked() {
-    for (let i = 0; i < $("[name=adaptation]").length; i++) {
-        if ($("[name=adaptation]")[i].checked) {
-            radioSelect = $("[name=adaptation]")[i].checked = false;
-        }
-    }
-}
-
 var jRPG = [];
 jRPG[0] = [];
 jRPG[0]["id_jrpg"] = 1;
@@ -169,6 +101,73 @@ function constructTable() {
     $('#tableau_jeux').html(sHTML);
 }
 
+// récupération du champ radio dans le js
+var radioSelect = "";
+function checkedRadio() {
+    for (let i = 0; i < $("[name=adaptation]").length; i++) {
+        if ($("[name=adaptation]")[i].checked) {
+            radioSelect = $("[name=adaptation]")[i].value;
+        }
+    }
+}
+
+// récupération de la radio dans le champ html
+function recupRadio(adapt) {
+    var iCheckRadio = $("[name=adaptation]");
+
+    for (let i = 0; i < iCheckRadio.length; i++) {
+        if (iCheckRadio[i].value == adapt) {
+            iCheckRadio[i].checked = true;
+        }
+    }
+}
+
+// fonction pour reset le champ radio
+function unchecked() {
+    for (let i = 0; i < $("[name=adaptation]").length; i++) {
+        if ($("[name=adaptation]")[i].checked) {
+            radioSelect = $("[name=adaptation]")[i].checked = false;
+        }
+    }
+}
+
+function loadRPG() {
+    var datas = {
+        page: "liste",
+        bJSON: 1
+    }
+    $.ajax({
+        type: "POST",
+        url: "route.php",
+        async: true,
+        data: datas,
+        dataType: "json",
+        cache: false,
+    })
+        .done(function (result) {
+            console.log(result);
+            var iRPG = 0;
+            for (var ligne in result) {
+                jRPG[iRPG] = [];
+                //jRPG[iRPG]["id_jrpg"] = result[ligne]["id_jrpg"];
+                jRPG[iRPG]["nom"] = htmlspecialchars_decode(result[ligne]["nom"]);
+                jRPG[iRPG]["date"] = result[ligne]["date_film"];
+                jRPG[iRPG]["editeur"] = result[ligne]["editeur"];
+                jRPG[iRPG]["plateforme"] = result[ligne]["plateforme"];
+                jRPG[iRPG]["adaptation"] = result[ligne]["adaptation"];
+                jRPG[iRPG]["serie"] = result[ligne]["serie"];
+                iRPG++;
+            }
+            // INIT DATATABLE
+            // Si je souhaite avoir par défaut autre que les 10 résultats par défaut au chargement
+            // tables.page.len(10).draw();
+            constructTable();
+            tables = $('#tableau_jeux').DataTable(configuration);
+        })
+        .fail(function (err) {
+            alert('error : ' + err.status);
+        });
+}
 function rebuildDatable() {
     $('#table_jeux').html("");
     tables.clear();
