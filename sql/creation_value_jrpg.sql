@@ -1,4 +1,5 @@
-INSERT INTO `jrpg` (`nom_jeu`, `date_sortie`, `editeur_jrpg`, `console_jrpg`, `adaptation_jrpg`, `franchise_jrpg`) VALUES
+INSERT INTO `jrpg` (`nom_jeu`, `date_sortie`, `editeur_jrpg`, `console_jrpg`, `adaptation_jrpg`, `franchise_jrpg`) 
+VALUES
 ('Fate Grand Order', '2015-07-30', 'Aniplex', 'Android and/or iOS', 'anime', 'Fate'),
 ('Fire Emblem: Awakening', '2013-04-19', 'Nintendo', '3DS', 'manga', 'Fire Emblem'),
 ('Persona 5', '2016-09-15', 'Atlus', 'PS3', 'anime', 'Shin Megami Tensei : Persona'),
