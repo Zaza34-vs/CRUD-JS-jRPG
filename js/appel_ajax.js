@@ -99,7 +99,7 @@ function loadRPG() {
                 jRPG[iRPG] = [];
                 //jRPG[iRPG]["id_jrpg"] = result[ligne]["id_jrpg"];
                 jRPG[iRPG]["nom"] = htmlspecialchars_decode(result[ligne]["nom"]);
-                jRPG[iRPG]["date"] = result[ligne]["date_film"];
+                jRPG[iRPG]["date"] = result[ligne]["date"];
                 jRPG[iRPG]["editeur"] = result[ligne]["editeur"];
                 jRPG[iRPG]["plateforme"] = result[ligne]["plateforme"];
                 jRPG[iRPG]["adaptation"] = result[ligne]["adaptation"];
