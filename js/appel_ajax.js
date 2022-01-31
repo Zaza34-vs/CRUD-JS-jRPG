@@ -97,7 +97,7 @@ function loadRPG() {
             var iRPG = 0;
             for (var ligne in result) {
                 jRPG[iRPG] = [];
-                //jRPG[iRPG]["id_jrpg"] = result[ligne]["id_jrpg"];
+                jRPG[iRPG]["id_jrpg"] = result[ligne]["id_jrpg"];
                 jRPG[iRPG]["nom"] = htmlspecialchars_decode(result[ligne]["nom"]);
                 jRPG[iRPG]["date"] = result[ligne]["date"];
                 jRPG[iRPG]["editeur"] = result[ligne]["editeur"];
