@@ -217,9 +217,8 @@ function majRPG() {
 
 //toujours la même chose
 function supprimRPG(iIndiceSuppr) {
-    $('#divModalSaving').show();
     var datas = {
-        page: "supprime_film",
+        page: "supprime",
         bJSON: 1,
         id_film: jRPG[iIndiceSuppr]["id_jrpg"]
     }
@@ -233,7 +232,6 @@ function supprimRPG(iIndiceSuppr) {
     })
         .done(function (result) {
             if (result[0]["error"] != "") {
-                $('#divModalSaving').hide();
                 alert("Erreur lors de la suppression de votre jeu. Vous allez être déconnecté.");
             } else {
                 for (var i = iIndiceSuppr; i < (jRPG.length - 1); i++) {
