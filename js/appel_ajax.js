@@ -3,10 +3,10 @@
 // créer la fonction ajax
 // créer la fonction .done
 
-function loadRPG()	{
+function loadRPG() {
     var datas = {
-        page : "liste_film",
-        bJSON : 1
+        page: "liste",
+        bJSON: 1
     }
     $.ajax({
         type: "POST",
@@ -16,38 +16,103 @@ function loadRPG()	{
         dataType: "json",
         cache: false,
     })
-    .done(function(result) {
-        console.log(result);
-        var iFilm= 0;
-        for (var ligne in result)	{
-            aOfFilms[iFilm]= [];
-            aOfFilms[iFilm]["id_film"]= result[ligne]["id_film"];
-            aOfFilms[iFilm]["titre_film"]= htmlspecialchars_decode(result[ligne]["titre_film"]);
-            aOfFilms[iFilm]["date_film"]= result[ligne]["date_film"];
-            aOfFilms[iFilm]["duree_film"]= result[ligne]["duree_film"];
-            iFilm++;
-        }
-        // INIT DATATABLE
-        // Si je souhaite avoir par défaut autre que les 10 résultats par défaut au chargement
-        // tables.page.len(10).draw();
-        constructTable();
-        tables = $('#table_films').DataTable(configuration);
-        $('#divModalSaving').hide();
-    })
-    .fail(function(err) {
-        alert('error : ' + err.status);
-    });
+        .done(function (result) {
+            console.log(result);
+            var iRPG = 0;
+            for (var ligne in result) {
+                jRPG[iRPG] = [];
+                jRPG[iRPG]["id_jrpg"] = result[ligne]["id_jrpg"];
+                jRPG[iRPG]["nom"] = htmlspecialchars_decode(result[ligne]["nom"]);
+                jRPG[iRPG]["date"] = result[ligne]["date_film"];
+                jRPG[iRPG]["editeur"] = result[ligne]["editeur"];
+                jRPG[iRPG]["plateforme"] = result[ligne]["plateforme"];
+                jRPG[iRPG]["adaptation"] = result[ligne]["adaptation"];
+                jRPG[iRPG]["serie"] = result[ligne]["serie"];
+                iRPG++;
+            }
+            // INIT DATATABLE
+            // Si je souhaite avoir par défaut autre que les 10 résultats par défaut au chargement
+            // tables.page.len(10).draw();
+            constructTable();
+            tables = $('#tableau_jeux').DataTable(configuration);
+        })
+        .fail(function (err) {
+            alert('error : ' + err.status);
+        });
 }
 
 var jRPG = [];
 jRPG[0] = [];
-jRPG[0]["id_jrpg"];
+jRPG[0]["id_jrpg"] = 1;
 jRPG[0]["nom"] = "Fate Grand Order";
 jRPG[0]["date"] = "2015-07-30";
 jRPG[0]["editeur"] = "Aniplex";
 jRPG[0]["plateforme"] = "Android and/or iOS";
 jRPG[0]["adaptation"] = "anime";
 jRPG[0]["serie"] = "Fate";
+
+jRPG[1] = [];
+jRPG[1]["id_jrpg"] = 2;
+jRPG[1]["nom"] = "Fire Emblem: Awakening";
+jRPG[1]["date"] = "2013-04-19";
+jRPG[1]["editeur"] = "Nintendo";
+jRPG[1]["plateforme"] = "3DS";
+jRPG[1]["adaptation"] = "manga";
+jRPG[1]["serie"] = "Fire Emblem";
+
+jRPG[2] = [];
+jRPG[2]["id_jrpg"] = 3;
+jRPG[2]["nom"] = "Persona 5";
+jRPG[2]["date"] = "2016-09-15";
+jRPG[2]["editeur"] = "Atlus";
+jRPG[2]["plateforme"] = "PS3";
+jRPG[2]["adaptation"] = "anime";
+jRPG[2]["serie"] = "Shin Megami Tensei, Persona";
+
+jRPG[3] = [];
+jRPG[3]["id_jrpg"] = 4;
+jRPG[3]["nom"] = "Dragon Quest XI : Les Combattants de la destinée";
+jRPG[3]["date"] = "2017-07-29";
+jRPG[3]["editeur"] = "Square Enix";
+jRPG[3]["plateforme"] = "XBOX";
+jRPG[3]["adaptation"] = "aucune";
+jRPG[3]["serie"] = "Dragon Quest";
+
+jRPG[4] = [];
+jRPG[4]["id_jrpg"] = 5;
+jRPG[4]["nom"] = "Final Fantasy VII Remake";
+jRPG[4]["date"] = "2020-04-10";
+jRPG[4]["editeur"] = "Square Enix";
+jRPG[4]["plateforme"] = "PS4";
+jRPG[4]["adaptation"] = "aucune";
+jRPG[4]["serie"] = "Final Fantasy";
+
+jRPG[5] = [];
+jRPG[5]["id_jrpg"] = 6;
+jRPG[5]["nom"] = "Ni no Kuni : La Vengeance de la sorcière céleste";
+jRPG[5]["date"] = "2013-02-01"; // (PS3 UE)
+jRPG[5]["editeur"] = "Bandai Namco";
+jRPG[5]["plateforme"] = "SWITCH";
+jRPG[5]["adaptation"] = "film d'animation";
+jRPG[5]["serie"] = "Ni no Kuni";
+
+jRPG[6] = [];
+jRPG[6]["id_jrpg"] = 7;
+jRPG[6]["nom"] = "Bravely Default";
+jRPG[6]["date"] = "2012-10-11";
+jRPG[6]["editeur"] = "Square Enix";
+jRPG[6]["plateforme"] = "3DS";
+jRPG[6]["adaptation"] = "aucune";
+jRPG[6]["serie"] = "Bravely";
+
+jRPG[7] = [];
+jRPG[7]["id_jrpg"] = 8;
+jRPG[7]["nom"] = "Granblue Fantasy";
+jRPG[7]["date"] = "2014-03-10";
+jRPG[7]["editeur"] = "Cygames";
+jRPG[7]["plateforme"] = "Android and/or iOS";
+jRPG[7]["adaptation"] = "film d'animation";
+jRPG[7]["serie"] = "Granblue";
 
 function constructTable() {
     var sHTML = "<thead>";
@@ -105,7 +170,7 @@ function ajouterRPG() {
         dDateFilm = $('#date_film').val();
     }
     var datas = {
-        page: "save_film",
+        page: "save",
         bJSON: 1,
         titre_film: $('#titre_film').val(),
         date_film: dDateFilm,
@@ -224,13 +289,13 @@ function supprimRPG(iIndiceSuppr) {
 
 //la même
 var iIndiceEditionEncours;
-function editRPG(iIndiceEdit)	{
-    iIndiceEditionEncours= iIndiceEdit;
+function editRPG(iIndiceEdit) {
+    iIndiceEditionEncours = iIndiceEdit;
     $('#id_film').val(aOfFilms[iIndiceEdit]["id_film"]);
     $('#titre_film').val(aOfFilms[iIndiceEdit]["titre_film"]);
-    if (detectIEorSafari())	{
+    if (detectIEorSafari()) {
         $('#date_film').val(convertDate(aOfFilms[iIndiceEdit]["date_film"]));
-    }  else  {
+    } else {
         $('#date_film').val(aOfFilms[iIndiceEdit]["date_film"]);
     }
     $('#duree_film').val(aOfFilms[iIndiceEdit]["duree_film"]);
