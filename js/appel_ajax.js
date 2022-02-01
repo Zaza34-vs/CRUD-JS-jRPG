@@ -153,13 +153,13 @@ function ajouterRPG() {
     })
         .done(function (result) {
             if (result[0]["error"] != "") {
-                alert("Erreur lors de l'ajout de votre film. Vous allez être déconnecté.");
+                alert("Erreur lors de l'ajout de votre jeu. Vous allez être déconnecté.");
             } else {
                 var lenRPG = jRPG.length;
                 jRPG[lenRPG] = [];
                 jRPG[lenRPG]["id_jrpg"] = result[ligne]["id_jrpg"];
                 jRPG[lenRPG]["nom"] = htmlspecialchars_decode(result[ligne]["nom"]);
-                jRPG[lenRPG]["date"] = result[ligne]["date_film"];
+                jRPG[lenRPG]["date"] = result[ligne]["date"];
                 jRPG[lenRPG]["editeur"] = result[ligne]["editeur"];
                 jRPG[lenRPG]["plateforme"] = result[ligne]["plateforme"];
                 jRPG[lenRPG]["adaptation"] = result[ligne]["adaptation"];
