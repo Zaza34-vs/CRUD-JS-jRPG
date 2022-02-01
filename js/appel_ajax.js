@@ -174,7 +174,6 @@ function ajouterRPG() {
         });
 }
 
-// pareil ici aussi
 function majRPG() {
     var datas = {
         page: "update",
@@ -215,7 +214,6 @@ function majRPG() {
         });
 }
 
-//toujours la même chose
 function supprimRPG(iIndiceSuppr) {
     var datas = {
         page: "supprime",
@@ -248,7 +246,6 @@ function supprimRPG(iIndiceSuppr) {
         });
 }
 
-//la même
 var iIndiceEditionEncours;
 function editRPG(iIndiceEdition) {
     iIndiceEditionToKeep = iIndiceEdition;
