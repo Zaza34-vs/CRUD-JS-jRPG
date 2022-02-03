@@ -35,6 +35,10 @@ L'arborescence du CRUD avec AJAX :
     >> crud-js.mcd
     >
     >>README.md
+    >
+    >> copié collé des dossiers css, img, js et sass
+    >
+    >> copié collé des fichiers style. css , .css.map, .scss
 
 >wamp64/modules ->
     >>crud ->
