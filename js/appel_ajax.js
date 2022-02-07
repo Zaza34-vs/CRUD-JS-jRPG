@@ -93,12 +93,12 @@ function loadRPG() {
             for (var ligne in result) {
                 jRPG[iRPG] = [];
                 //jRPG[iRPG]["id_jrpg"] = result[ligne]["id_jrpg"];
-                jRPG[iRPG]["nom"] = result[ligne]["nom"];
-                jRPG[iRPG]["date"] = result[ligne]["date"];
-                jRPG[iRPG]["editeur"] = result[ligne]["editeur"];
-                jRPG[iRPG]["plateforme"] = result[ligne]["plateforme"];
-                jRPG[iRPG]["adaptation"] = result[ligne]["adaptation"];
-                jRPG[iRPG]["serie"] = result[ligne]["serie"];
+                jRPG[iRPG]["nom"] = result[ligne]["nom_jeu"];
+                jRPG[iRPG]["date"] = result[ligne]["date_sortie"];
+                jRPG[iRPG]["editeur"] = result[ligne]["editeur_jrpg"];
+                jRPG[iRPG]["plateforme"] = result[ligne]["console_jrpg"];
+                jRPG[iRPG]["adaptation"] = result[ligne]["adaptation_jrpg"];
+                jRPG[iRPG]["serie"] = result[ligne]["franchise_jrpg"];
                 iRPG++;
             }
             // INIT DATATABLE
