@@ -12,7 +12,7 @@
         return $numero_connexion->lastInsertId();
     }
 
-    function getSelectedDatas($numero_connexion, $spathSQL, $data=array()){
+    function getSelectDatas($numero_connexion, $spathSQL, $data=array()){
         $sql = file_get_contents($spathSQL);
 
         foreach ($data as $key => $value) {
