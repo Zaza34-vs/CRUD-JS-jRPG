@@ -294,7 +294,7 @@ function majRPG() {
 }
 
 //toujours la même chose
-function supprimRPG(iIndiceSuppr) {
+function deleteRPG(iIndiceSuppr) {
     $('#divModalSaving').show();
     var datas = {
         page: "delete",
