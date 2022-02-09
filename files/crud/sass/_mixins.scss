@@ -1,0 +1,69 @@
+@mixin btnAction {
+    border-radius: $btnRadius;
+    background-color: $color4;
+    color: $color5;
+    border: $btnBorder $color6;
+
+    &:hover {
+        background-color: $color7;
+        color: $color6;
+        border: $btnBorder $color6;
+        transition-duration: $btnTransition;
+    }
+}
+
+@mixin btnUpdate {
+    border-radius: $btnRadius;
+    background-color: $color8;
+    color: $color5;
+    border: $btnBorder $color9;
+
+    &:hover {
+        background-color: $color10;
+        color: $color5;
+        border: $btnBorder $color11;
+        transition-duration: $btnTransition;
+    }
+}
+
+@mixin btnUndo {
+    border-radius: $btnRadius;
+    background-color: $color12;
+    color: $color5;
+    border: $btnBorder $color13;
+
+    &:hover {
+        background-color: $color14;
+        color: $color11;
+        border: $btnBorder $color15;
+        transition-duration: $btnTransition;
+    }
+}
+
+@mixin btnDelete {
+    border-radius: $btnRadius;
+    background-color: $color3;
+    color: $color5;
+    border: $btnBorder $color16;
+
+    &:hover {
+        background-color: $color17;
+        color: $color7;
+        border: $btnBorder $color11;
+        transition-duration: $btnTransition;
+    }
+}
+
+@mixin btnReset {
+    border-radius: $btnRadius;
+    background-color: $color6;
+    color: $color5;
+    border: $btnBorder $color10;
+
+    &:hover {
+        background-color: $color2;
+        color: $color1;
+        border: $btnBorder $color18;
+        transition-duration: $btnTransition;
+    }
+}

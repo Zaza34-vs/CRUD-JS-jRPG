@@ -1,0 +1,24 @@
+.inputs {
+    text-align: $text-align;
+    color: $color19;
+    font-style: $inputStyle;
+}
+
+.cases_a_cocher {
+    display: $display;
+}
+
+.input.control {
+    outline: $outline;
+    font-size: $fontSize;
+}
+
+.control:valid {
+    background-color: $color22;
+    color: $color7;
+}
+
+.control:invalid {
+    background-color: $color23;
+    color: $color7;
+}

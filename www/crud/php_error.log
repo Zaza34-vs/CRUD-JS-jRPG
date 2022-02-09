@@ -1,0 +1,58 @@
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = prenom_acteur => Chadwick
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = nationalite_acteur => Americain
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = age_acteur => 40
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = id_acteur => 30
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = nom_acteur => Kirigaya
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = prenom_acteur => Kazuto
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = nationalite_acteur => Jap
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = age_acteur => 19
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = id_acteur => 31
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = nom_acteur => rebbani
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = prenom_acteur => hamza
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = nationalite_acteur => français
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = age_acteur => 23
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = id_acteur => 34
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = nom_acteur => durif
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = prenom_acteur => sylvain
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = nationalite_acteur => français
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = age_acteur => 666
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = id_acteur => 35
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = nom_acteur => truand
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = prenom_acteur => morsay
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = nationalite_acteur => blédart
+[19-Jan-2022 15:01:46 UTC] getSelectDatas DETAILS = age_acteur => 48
+[19-Jan-2022 15:01:55 UTC] treatDatas = delete from acteur where id_acteur=35
+[19-Jan-2022 15:01:57 UTC] getSelectDatas = select id_acteur, nom_acteur,prenom_acteur,nationalite_acteur, age_acteur from acteur
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = id_acteur => 14
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = nom_acteur => Downey Jr
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = prenom_acteur => Robert
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = nationalite_acteur => Americain
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = age_acteur => 53
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = id_acteur => 23
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = nom_acteur => Bosemun
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = prenom_acteur => Chadwick
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = nationalite_acteur => Americain
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = age_acteur => 40
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = id_acteur => 30
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = nom_acteur => Kirigaya
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = prenom_acteur => Kazuto
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = nationalite_acteur => Jap
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = age_acteur => 19
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = id_acteur => 31
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = nom_acteur => rebbani
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = prenom_acteur => hamza
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = nationalite_acteur => français
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = age_acteur => 23
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = id_acteur => 34
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = nom_acteur => durif
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = prenom_acteur => sylvain
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = nationalite_acteur => français
+[19-Jan-2022 15:01:57 UTC] getSelectDatas DETAILS = age_acteur => 666
+[27-Jan-2022 08:20:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getAllResultats() in C:\wamp64\www\crud\route.php:15
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\crud\route.php on line 15
+[27-Jan-2022 08:21:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getAllResultats() in C:\wamp64\www\crud\route.php:15
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\crud\route.php on line 15

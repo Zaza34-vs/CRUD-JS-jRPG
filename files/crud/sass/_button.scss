@@ -1,0 +1,23 @@
+.resetStart {
+    text-align: $text-align;
+}
+
+.btn_action {
+    @include btnAction;
+}
+
+.btn_modifier {
+    @include btnUpdate;
+}
+
+.btn_annuler {
+    @include btnUndo;
+}
+
+.btn_delete {
+    @include btnDelete;
+}
+
+.btn_reset {
+    @include btnReset;
+}

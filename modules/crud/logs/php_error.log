@@ -1,0 +1,511 @@
+[01-Feb-2022 15:32:40 UTC] getSelectDatas DETAILS = nationalite_acteur => Français
+[01-Feb-2022 15:32:40 UTC] getSelectDatas DETAILS = age_acteur => 23
+[01-Feb-2022 15:32:40 UTC] getSelectDatas DETAILS = id_acteur => 35
+[01-Feb-2022 15:32:40 UTC] getSelectDatas DETAILS = nom_acteur => Jojo
+[01-Feb-2022 15:32:40 UTC] getSelectDatas DETAILS = prenom_acteur => Scar
+[01-Feb-2022 15:32:40 UTC] getSelectDatas DETAILS = nationalite_acteur => australien
+[01-Feb-2022 15:32:40 UTC] getSelectDatas DETAILS = age_acteur => 23
+[01-Feb-2022 15:32:42 UTC] treatDatas = delete from acteur where id_acteur=35
+[01-Feb-2022 15:32:44 UTC] getSelectDatas = select id_acteur, nom_acteur,prenom_acteur,nationalite_acteur, age_acteur from acteur
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = id_acteur => 23
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = nom_acteur => Bosemun
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = prenom_acteur => Chadwick
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = nationalite_acteur => Americain
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = age_acteur => 40
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = id_acteur => 30
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = nom_acteur => Kirigaya
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = prenom_acteur => Kazuto
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = nationalite_acteur => Jap
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = age_acteur => 19
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = id_acteur => 33
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = nom_acteur => Rebbani
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = prenom_acteur => Hamza
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = nationalite_acteur => Français
+[01-Feb-2022 15:32:44 UTC] getSelectDatas DETAILS = age_acteur => 23
+[01-Feb-2022 15:33:03 UTC] PHP Fatal error: Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+ thrown in C:\wamp64\modules\crud\liste.php on line 4
+[01-Feb-2022 15:33:07 UTC] PHP Fatal error: Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+ thrown in C:\wamp64\modules\crud\liste.php on line 4
+[01-Feb-2022 15:38:18 UTC] getSelectDatas = select id_acteur, nom_acteur,prenom_acteur,nationalite_acteur, age_acteur from acteur
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = id_acteur => 23
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = nom_acteur => Bosemun
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = prenom_acteur => Chadwick
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = nationalite_acteur => Americain
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = age_acteur => 40
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = id_acteur => 30
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = nom_acteur => Kirigaya
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = prenom_acteur => Kazuto
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = nationalite_acteur => Jap
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = age_acteur => 19
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = id_acteur => 33
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = nom_acteur => Rebbani
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = prenom_acteur => Hamza
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = nationalite_acteur => Français
+[01-Feb-2022 15:38:18 UTC] getSelectDatas DETAILS = age_acteur => 23
+[07-Feb-2022 07:41:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 07:41:59 UTC] PHP Notice:  Undefined index: nom in C:\wamp64\modules\crud\save.php on line 5
+[07-Feb-2022 07:41:59 UTC] PHP Stack trace:
+[07-Feb-2022 07:41:59 UTC] PHP   1. {main}() C:\wamp64\www\crud\route.php:0
+[07-Feb-2022 07:41:59 UTC] PHP   2. getAllResultats() C:\wamp64\www\crud\route.php:15
+[07-Feb-2022 07:41:59 UTC] PHP Notice:  Undefined index: date in C:\wamp64\modules\crud\save.php on line 6
+[07-Feb-2022 07:41:59 UTC] PHP Stack trace:
+[07-Feb-2022 07:41:59 UTC] PHP   1. {main}() C:\wamp64\www\crud\route.php:0
+[07-Feb-2022 07:41:59 UTC] PHP   2. getAllResultats() C:\wamp64\www\crud\route.php:15
+[07-Feb-2022 07:41:59 UTC] PHP Notice:  Undefined index: editeur in C:\wamp64\modules\crud\save.php on line 7
+[07-Feb-2022 07:41:59 UTC] PHP Stack trace:
+[07-Feb-2022 07:41:59 UTC] PHP   1. {main}() C:\wamp64\www\crud\route.php:0
+[07-Feb-2022 07:41:59 UTC] PHP   2. getAllResultats() C:\wamp64\www\crud\route.php:15
+[07-Feb-2022 07:41:59 UTC] PHP Notice:  Undefined index: console in C:\wamp64\modules\crud\save.php on line 8
+[07-Feb-2022 07:41:59 UTC] PHP Stack trace:
+[07-Feb-2022 07:41:59 UTC] PHP   1. {main}() C:\wamp64\www\crud\route.php:0
+[07-Feb-2022 07:41:59 UTC] PHP   2. getAllResultats() C:\wamp64\www\crud\route.php:15
+[07-Feb-2022 07:41:59 UTC] PHP Notice:  Undefined index: adaptation in C:\wamp64\modules\crud\save.php on line 9
+[07-Feb-2022 07:41:59 UTC] PHP Stack trace:
+[07-Feb-2022 07:41:59 UTC] PHP   1. {main}() C:\wamp64\www\crud\route.php:0
+[07-Feb-2022 07:41:59 UTC] PHP   2. getAllResultats() C:\wamp64\www\crud\route.php:15
+[07-Feb-2022 07:41:59 UTC] PHP Notice:  Undefined index: serie in C:\wamp64\modules\crud\save.php on line 10
+[07-Feb-2022 07:41:59 UTC] PHP Stack trace:
+[07-Feb-2022 07:41:59 UTC] PHP   1. {main}() C:\wamp64\www\crud\route.php:0
+[07-Feb-2022 07:41:59 UTC] PHP   2. getAllResultats() C:\wamp64\www\crud\route.php:15
+[07-Feb-2022 07:41:59 UTC] treatDatas = insert into jrpg (nom_jeu, date_sortie, editeur_jrpg, console_jrpg, adaptation_jrpg, franchise_jrpg)
+values ("@nom", "@date", "@editeur", "@console", "@adaptation", "@serie")
+[07-Feb-2022 07:41:59 UTC] PHP Notice:  Undefined property: PDO::$error in C:\wamp64\modules\crud\database.php on line 62
+[07-Feb-2022 07:41:59 UTC] PHP Stack trace:
+[07-Feb-2022 07:41:59 UTC] PHP   1. {main}() C:\wamp64\www\crud\route.php:0
+[07-Feb-2022 07:41:59 UTC] PHP   2. getAllResultats() C:\wamp64\www\crud\route.php:15
+[07-Feb-2022 07:41:59 UTC] PHP   3. treatDatas() C:\wamp64\modules\crud\save.php:10
+[07-Feb-2022 07:41:59 UTC] error = 
+[07-Feb-2022 07:41:59 UTC] PHP Notice:  Undefined variable: id_jrpg_created in C:\wamp64\files\crud\html\save.html on line 4
+[07-Feb-2022 07:41:59 UTC] PHP Stack trace:
+[07-Feb-2022 07:41:59 UTC] PHP   1. {main}() C:\wamp64\www\crud\route.php:0
+[07-Feb-2022 07:41:59 UTC] PHP   2. require() C:\wamp64\www\crud\route.php:20
+[07-Feb-2022 07:57:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 07:57:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 07:58:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 07:58:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 08:20:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 08:20:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 08:20:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 08:22:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 08:24:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 08:24:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 08:27:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 08:32:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSelectDatas() in C:\wamp64\modules\crud\liste.php:4
+Stack trace:
+#0 C:\wamp64\www\crud\route.php(15): getAllResultats(Object(PDO), Array, Array)
+#1 {main}
+  thrown in C:\wamp64\modules\crud\liste.php on line 4
+[07-Feb-2022 08:37:33 UTC] getSelectDatas = select id_jrpg, nom_jeu, date_sortie, editeur_jrpg, console_jrpg, adaptation_jrpg, franchise_jrpg
+from jrpg
+
+
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = id_jrpg => 1
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = nom_jeu => Fate Grand Order
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = date_sortie => 2015-07-30
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = editeur_jrpg => Aniplex
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = franchise_jrpg => Fate
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = id_jrpg => 2
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = nom_jeu => Fire Emblem: Awakening
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = date_sortie => 2013-04-19
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = editeur_jrpg => Nintendo
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = adaptation_jrpg => manga
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = franchise_jrpg => Fire Emblem
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = id_jrpg => 3
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = nom_jeu => Persona 5
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = date_sortie => 2016-09-15
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = editeur_jrpg => Atlus
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = console_jrpg => PS3
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = franchise_jrpg => Shin Megami Tensei : Persona
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = id_jrpg => 4
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = nom_jeu => Dragon Quest XI : Les Combattants de la destinée
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = date_sortie => 2017-07-29
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = console_jrpg => XBOX
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = franchise_jrpg => Dragon Quest
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = id_jrpg => 5
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = nom_jeu => Final Fantasy VII Remake
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = date_sortie => 2020-04-10
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = console_jrpg => PS4
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = franchise_jrpg => Final Fantasy
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = id_jrpg => 6
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = nom_jeu => Ni no Kuni : La Vengeance de la sorcière céleste
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = date_sortie => 2013-02-01
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = editeur_jrpg => Bandai Namco
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = console_jrpg => Switch
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = franchise_jrpg => Ni no Kuni
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = id_jrpg => 7
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = nom_jeu => Bravely Default
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = date_sortie => 2012-10-11
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = franchise_jrpg => Bravely
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = id_jrpg => 8
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = nom_jeu => Granblue Fantasy
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = date_sortie => 2014-03-10
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = editeur_jrpg => Cygames
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:37:33 UTC] getSelectDatas DETAILS = franchise_jrpg => Granblue
+[07-Feb-2022 08:38:32 UTC] getSelectDatas = select id_jrpg, nom_jeu, date_sortie, editeur_jrpg, console_jrpg, adaptation_jrpg, franchise_jrpg
+from jrpg
+
+
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = id_jrpg => 1
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = nom_jeu => Fate Grand Order
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = date_sortie => 2015-07-30
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = editeur_jrpg => Aniplex
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = franchise_jrpg => Fate
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = id_jrpg => 2
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = nom_jeu => Fire Emblem: Awakening
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = date_sortie => 2013-04-19
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = editeur_jrpg => Nintendo
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = adaptation_jrpg => manga
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = franchise_jrpg => Fire Emblem
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = id_jrpg => 3
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = nom_jeu => Persona 5
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = date_sortie => 2016-09-15
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = editeur_jrpg => Atlus
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = console_jrpg => PS3
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = franchise_jrpg => Shin Megami Tensei : Persona
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = id_jrpg => 4
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = nom_jeu => Dragon Quest XI : Les Combattants de la destinée
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = date_sortie => 2017-07-29
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = console_jrpg => XBOX
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = franchise_jrpg => Dragon Quest
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = id_jrpg => 5
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = nom_jeu => Final Fantasy VII Remake
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = date_sortie => 2020-04-10
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = console_jrpg => PS4
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = franchise_jrpg => Final Fantasy
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = id_jrpg => 6
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = nom_jeu => Ni no Kuni : La Vengeance de la sorcière céleste
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = date_sortie => 2013-02-01
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = editeur_jrpg => Bandai Namco
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = console_jrpg => Switch
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = franchise_jrpg => Ni no Kuni
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = id_jrpg => 7
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = nom_jeu => Bravely Default
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = date_sortie => 2012-10-11
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = franchise_jrpg => Bravely
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = id_jrpg => 8
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = nom_jeu => Granblue Fantasy
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = date_sortie => 2014-03-10
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = editeur_jrpg => Cygames
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:38:32 UTC] getSelectDatas DETAILS = franchise_jrpg => Granblue
+[07-Feb-2022 08:38:44 UTC] getSelectDatas = select id_jrpg, nom_jeu, date_sortie, editeur_jrpg, console_jrpg, adaptation_jrpg, franchise_jrpg
+from jrpg
+
+
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = id_jrpg => 1
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = nom_jeu => Fate Grand Order
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = date_sortie => 2015-07-30
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = editeur_jrpg => Aniplex
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = franchise_jrpg => Fate
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = id_jrpg => 2
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = nom_jeu => Fire Emblem: Awakening
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = date_sortie => 2013-04-19
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = editeur_jrpg => Nintendo
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = adaptation_jrpg => manga
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = franchise_jrpg => Fire Emblem
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = id_jrpg => 3
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = nom_jeu => Persona 5
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = date_sortie => 2016-09-15
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = editeur_jrpg => Atlus
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = console_jrpg => PS3
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = franchise_jrpg => Shin Megami Tensei : Persona
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = id_jrpg => 4
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = nom_jeu => Dragon Quest XI : Les Combattants de la destinée
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = date_sortie => 2017-07-29
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = console_jrpg => XBOX
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = franchise_jrpg => Dragon Quest
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = id_jrpg => 5
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = nom_jeu => Final Fantasy VII Remake
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = date_sortie => 2020-04-10
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = console_jrpg => PS4
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = franchise_jrpg => Final Fantasy
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = id_jrpg => 6
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = nom_jeu => Ni no Kuni : La Vengeance de la sorcière céleste
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = date_sortie => 2013-02-01
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = editeur_jrpg => Bandai Namco
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = console_jrpg => Switch
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = franchise_jrpg => Ni no Kuni
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = id_jrpg => 7
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = nom_jeu => Bravely Default
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = date_sortie => 2012-10-11
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = franchise_jrpg => Bravely
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = id_jrpg => 8
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = nom_jeu => Granblue Fantasy
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = date_sortie => 2014-03-10
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = editeur_jrpg => Cygames
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:38:44 UTC] getSelectDatas DETAILS = franchise_jrpg => Granblue
+[07-Feb-2022 08:41:51 UTC] getSelectDatas = select id_jrpg, nom_jeu, date_sortie, editeur_jrpg, console_jrpg, adaptation_jrpg, franchise_jrpg
+from jrpg
+
+
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = id_jrpg => 1
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = nom_jeu => Fate Grand Order
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = date_sortie => 2015-07-30
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = editeur_jrpg => Aniplex
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = franchise_jrpg => Fate
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = id_jrpg => 2
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = nom_jeu => Fire Emblem: Awakening
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = date_sortie => 2013-04-19
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = editeur_jrpg => Nintendo
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = adaptation_jrpg => manga
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = franchise_jrpg => Fire Emblem
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = id_jrpg => 3
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = nom_jeu => Persona 5
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = date_sortie => 2016-09-15
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = editeur_jrpg => Atlus
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = console_jrpg => PS3
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = franchise_jrpg => Shin Megami Tensei : Persona
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = id_jrpg => 4
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = nom_jeu => Dragon Quest XI : Les Combattants de la destinée
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = date_sortie => 2017-07-29
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = console_jrpg => XBOX
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = franchise_jrpg => Dragon Quest
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = id_jrpg => 5
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = nom_jeu => Final Fantasy VII Remake
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = date_sortie => 2020-04-10
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = console_jrpg => PS4
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = franchise_jrpg => Final Fantasy
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = id_jrpg => 6
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = nom_jeu => Ni no Kuni : La Vengeance de la sorcière céleste
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = date_sortie => 2013-02-01
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = editeur_jrpg => Bandai Namco
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = console_jrpg => Switch
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = franchise_jrpg => Ni no Kuni
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = id_jrpg => 7
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = nom_jeu => Bravely Default
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = date_sortie => 2012-10-11
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = franchise_jrpg => Bravely
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = id_jrpg => 8
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = nom_jeu => Granblue Fantasy
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = date_sortie => 2014-03-10
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = editeur_jrpg => Cygames
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:41:51 UTC] getSelectDatas DETAILS = franchise_jrpg => Granblue
+[07-Feb-2022 08:41:58 UTC] getSelectDatas = select id_jrpg, nom_jeu, date_sortie, editeur_jrpg, console_jrpg, adaptation_jrpg, franchise_jrpg
+from jrpg
+
+
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = id_jrpg => 1
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = nom_jeu => Fate Grand Order
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = date_sortie => 2015-07-30
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = editeur_jrpg => Aniplex
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = franchise_jrpg => Fate
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = id_jrpg => 2
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = nom_jeu => Fire Emblem: Awakening
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = date_sortie => 2013-04-19
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = editeur_jrpg => Nintendo
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = adaptation_jrpg => manga
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = franchise_jrpg => Fire Emblem
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = id_jrpg => 3
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = nom_jeu => Persona 5
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = date_sortie => 2016-09-15
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = editeur_jrpg => Atlus
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = console_jrpg => PS3
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = franchise_jrpg => Shin Megami Tensei : Persona
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = id_jrpg => 4
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = nom_jeu => Dragon Quest XI : Les Combattants de la destinée
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = date_sortie => 2017-07-29
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = console_jrpg => XBOX
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = franchise_jrpg => Dragon Quest
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = id_jrpg => 5
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = nom_jeu => Final Fantasy VII Remake
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = date_sortie => 2020-04-10
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = console_jrpg => PS4
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = franchise_jrpg => Final Fantasy
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = id_jrpg => 6
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = nom_jeu => Ni no Kuni : La Vengeance de la sorcière céleste
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = date_sortie => 2013-02-01
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = editeur_jrpg => Bandai Namco
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = console_jrpg => Switch
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = franchise_jrpg => Ni no Kuni
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = id_jrpg => 7
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = nom_jeu => Bravely Default
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = date_sortie => 2012-10-11
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = franchise_jrpg => Bravely
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = id_jrpg => 8
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = nom_jeu => Granblue Fantasy
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = date_sortie => 2014-03-10
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = editeur_jrpg => Cygames
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:41:58 UTC] getSelectDatas DETAILS = franchise_jrpg => Granblue
+[07-Feb-2022 08:42:10 UTC] getSelectDatas = select id_jrpg, nom_jeu, date_sortie, editeur_jrpg, console_jrpg, adaptation_jrpg, franchise_jrpg
+from jrpg
+
+
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = id_jrpg => 1
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = nom_jeu => Fate Grand Order
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = date_sortie => 2015-07-30
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = editeur_jrpg => Aniplex
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = franchise_jrpg => Fate
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = id_jrpg => 2
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = nom_jeu => Fire Emblem: Awakening
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = date_sortie => 2013-04-19
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = editeur_jrpg => Nintendo
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = adaptation_jrpg => manga
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = franchise_jrpg => Fire Emblem
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = id_jrpg => 3
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = nom_jeu => Persona 5
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = date_sortie => 2016-09-15
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = editeur_jrpg => Atlus
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = console_jrpg => PS3
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = franchise_jrpg => Shin Megami Tensei : Persona
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = id_jrpg => 4
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = nom_jeu => Dragon Quest XI : Les Combattants de la destinée
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = date_sortie => 2017-07-29
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = console_jrpg => XBOX
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = adaptation_jrpg => anime
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = franchise_jrpg => Dragon Quest
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = id_jrpg => 5
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = nom_jeu => Final Fantasy VII Remake
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = date_sortie => 2020-04-10
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = console_jrpg => PS4
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = franchise_jrpg => Final Fantasy
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = id_jrpg => 6
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = nom_jeu => Ni no Kuni : La Vengeance de la sorcière céleste
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = date_sortie => 2013-02-01
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = editeur_jrpg => Bandai Namco
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = console_jrpg => Switch
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = franchise_jrpg => Ni no Kuni
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = id_jrpg => 7
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = nom_jeu => Bravely Default
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = date_sortie => 2012-10-11
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = editeur_jrpg => Square Enix
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = console_jrpg => 3DS
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = adaptation_jrpg => aucun
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = franchise_jrpg => Bravely
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = id_jrpg => 8
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = nom_jeu => Granblue Fantasy
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = date_sortie => 2014-03-10
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = editeur_jrpg => Cygames
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = console_jrpg => Android and/or iOS
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = adaptation_jrpg => film-d-animation
+[07-Feb-2022 08:42:10 UTC] getSelectDatas DETAILS = franchise_jrpg => Granblue

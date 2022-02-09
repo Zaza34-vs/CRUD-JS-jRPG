@@ -1,0 +1,13 @@
+.tab {
+    border-spacing: $borderSpace;
+    border: $tabBorder $color1;
+}
+
+thead {
+    background-color: $color1;
+    color: $color3;
+}
+
+tbody {
+    color: $color3;
+}
