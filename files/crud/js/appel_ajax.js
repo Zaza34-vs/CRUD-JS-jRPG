@@ -235,13 +235,13 @@ function ajouterRPG() {
             } else {
                 var lenRPG = jRPG.length;
                 jRPG[lenRPG] = [];
-                jRPG[lenRPG]["id_jrpg"] = result[ligne]["id_jrpg"];
-                jRPG[lenRPG]["nom"] = htmlspecialchars_decode(result[ligne]["nom"]);
-                jRPG[lenRPG]["date"] = result[ligne]["date_film"];
-                jRPG[lenRPG]["editeur"] = result[ligne]["editeur"];
-                jRPG[lenRPG]["plateforme"] = result[ligne]["plateforme"];
-                jRPG[lenRPG]["adaptation"] = result[ligne]["adaptation"];
-                jRPG[lenRPG]["serie"] = result[ligne]["serie"];
+                //jRPG[lenRPG]["id_jrpg"] = result[ligne]["id_jrpg"];
+                jRPG[lenRPG]["nom"] = result[ligne]["nom_jeu"];
+                jRPG[lenRPG]["date"] = result[ligne]["date_sortie"];
+                jRPG[lenRPG]["editeur"] = result[ligne]["editeur_jrpg"];
+                jRPG[lenRPG]["plateforme"] = result[ligne]["console_jrpg"];
+                jRPG[lenRPG]["adaptation"] = result[ligne]["adaptation_jrpg"];
+                jRPG[lenRPG]["serie"] = result[ligne]["franchise_jrpg"];
                 rebuildDatable();
                 clearForm();
             }
@@ -297,7 +297,7 @@ function majRPG() {
 function supprimRPG(iIndiceSuppr) {
     $('#divModalSaving').show();
     var datas = {
-        page: "supprime_film",
+        page: "delete",
         bJSON: 1,
         id_film: jRPG[iIndiceSuppr]["id_jrpg"]
     }
