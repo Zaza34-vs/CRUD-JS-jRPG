@@ -299,7 +299,7 @@ function deleteRPG(iIndiceSuppr) {
     var datas = {
         page: "delete",
         bJSON: 1,
-        id_film: jRPG[iIndiceSuppr]["id_jrpg"]
+        id_jrpg: jRPG[iIndiceSuppr]["id_jrpg"]
     }
     $.ajax({
         type: "POST",
